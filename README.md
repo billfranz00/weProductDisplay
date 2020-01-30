@@ -1,4 +1,4 @@
-# williams_sonoma
+# WE Product Dispay
 
 ## Project setup
 ```
