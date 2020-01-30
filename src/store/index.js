@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-Vue.use(Vuex)
+Vue.use(Vuex);
+
+import productService from "../services/product-service";
 
 export default new Vuex.Store({
   state: {
@@ -9,7 +11,18 @@ export default new Vuex.Store({
   mutations: {
   },
   actions: {
+  	async getProducts({ commit }) {
+  		await productService()
+        .then(res => {
+          res.json().then(data => {
+          	console.log(data);
+          });
+  			})
+        .catch(err => {
+          console.log(err);
+        });
+  	}
   },
   modules: {
   }
-})
+});
