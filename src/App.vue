@@ -41,7 +41,7 @@ export default {
   methods: {
     displayThumbnails(targetProduct) {
       this.showThumbnails = true;
-      console.log(targetProduct);
+      console.log(targetProduct.images.length);
       this.productTitle = targetProduct.name;
       this.productImages = targetProduct.images;
     },
