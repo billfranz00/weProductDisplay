@@ -52,7 +52,7 @@
 </script>
 
 <style scoped lang="scss">
-@import "../assets/styles";
+@import "../assets/defaults";
 	
 .product-carousel {
 	position: fixed;

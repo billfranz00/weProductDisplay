@@ -1,11 +1,11 @@
 # WE Product Dispay
 
-## Project setup
+## Project setup - Run this first to install required node modules
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for development - Use this to view application in browser locally
 ```
 npm run serve
 ```
@@ -15,20 +15,7 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
+### Run unit tests - couple of tests for Carousel functionality
 ```
 npm run test:unit
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

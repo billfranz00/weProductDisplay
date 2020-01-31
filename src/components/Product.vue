@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../assets/styles";
+@import "../assets/defaults";
 
 @mixin set-width {
   max-width: 360px;
