@@ -12,66 +12,15 @@
 </template>
 
 <script>
-export default {
-  name: 'product',
-  props: {
-    product: Object
-  },
-  methods: {
-    displayThumbnails() {
-      this.$emit('displayThumbnails');
-    }
-  }
-}
+
+import productJs from "../assets/js/product";
+
+export default productJs;
+
 </script>
 
 <style scoped lang="scss">
-@import "../assets/defaults";
 
-@mixin set-width {
-  max-width: 360px;
-  width: 100%;
-}
+@import "../assets/styles/product";
 
-.product-container__module {
-  list-style-type: none;
-  width: 100%;
-  border: 2px solid #565458;
-  margin: 25px 0;
-}
-.product-container__title {
-  @include set-width;
-  margin: 0 auto;
-}
-.product-container__img {
-  @include set-width;
-  cursor: pointer;
-}
-.product-container__link {
-  text-decoration: none;
-  color: $default-color;
-  &:hover {
-    color: #42b983;
-  }
-}
-
-@media only screen and (min-width: 660px) {
-  .product-container__module {
-    list-style-type: none;
-    width: 32%;
-    margin: 0 2px 50px;
-  }
-  .product-container__title {
-    font-size: 1em;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .product-container__module {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .product-container__title {
-    font-size: 1.1em;
-  }
-}
 </style>

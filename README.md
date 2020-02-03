@@ -15,7 +15,7 @@ npm run serve
 npm run build
 ```
 
-### Run unit tests - couple of tests for Carousel functionality
+### Run unit tests - Test suite for App, Carousel, and Product components
 ```
 npm run test:unit
 ```

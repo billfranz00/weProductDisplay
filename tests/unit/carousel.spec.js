@@ -15,6 +15,15 @@ describe('Carousel.vue', () => {
 		}
 	});
 
+	test("Carousel displays first image index when created", () => {
+		expect(wrapper.vm.targetImage.href).toEqual("imageLink1");
+	});
+
+	it('Emits Close Out event', () => {
+		wrapper.vm.closeOut();
+		expect(wrapper.emitted("closeOut")).toBeTruthy();
+	});
+
 	it('switches to second image/index in carousel (last option)', () => {
 		wrapper.vm.switchImage(1);
 		expect(wrapper.vm.imageIndex).toBe(1);
